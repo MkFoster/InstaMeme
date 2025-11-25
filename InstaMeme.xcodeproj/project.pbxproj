@@ -6,6 +6,30 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E069D8912ED4E35B0090FBB1 /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D8832ED4E35B0090FBB1 /* Meme.swift */; };
+		E069D8922ED4E35B0090FBB1 /* InstaMemeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D8802ED4E35B0090FBB1 /* InstaMemeApp.swift */; };
+		E069D8932ED4E35B0090FBB1 /* CameraMemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D88C2ED4E35B0090FBB1 /* CameraMemeView.swift */; };
+		E069D8942ED4E35B0090FBB1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D88F2ED4E35B0090FBB1 /* SettingsView.swift */; };
+		E069D8952ED4E35B0090FBB1 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D8872ED4E35B0090FBB1 /* ImageStore.swift */; };
+		E069D8962ED4E35B0090FBB1 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D87F2ED4E35B0090FBB1 /* AppRouter.swift */; };
+		E069D8972ED4E35B0090FBB1 /* MemeEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D88D2ED4E35B0090FBB1 /* MemeEditorView.swift */; };
+		E069D8982ED4E35B0090FBB1 /* MemeTextOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D88A2ED4E35B0090FBB1 /* MemeTextOverlay.swift */; };
+		E069D8992ED4E35B0090FBB1 /* MemeAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D8882ED4E35B0090FBB1 /* MemeAIService.swift */; };
+		E069D89A2ED4E35B0090FBB1 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D8822ED4E35B0090FBB1 /* AppSettings.swift */; };
+		E069D89B2ED4E35B0090FBB1 /* MemeGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D88E2ED4E35B0090FBB1 /* MemeGalleryView.swift */; };
+		E069D89C2ED4E35B0090FBB1 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E069D8852ED4E35B0090FBB1 /* .gitkeep */; };
+		E069D89E2ED51F820090FBB1 /* CameraCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D89D2ED51F7C0090FBB1 /* CameraCaptureView.swift */; };
+		E069D8A12ED537AF0090FBB1 /* MLXLMCommon in Frameworks */ = {isa = PBXBuildFile; productRef = E069D8A02ED537AF0090FBB1 /* MLXLMCommon */; };
+		E069D8A32ED537AF0090FBB1 /* MLXVLM in Frameworks */ = {isa = PBXBuildFile; productRef = E069D8A22ED537AF0090FBB1 /* MLXVLM */; };
+		E069D8A52ED56D600090FBB1 /* MemeTextModelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D8A42ED56D570090FBB1 /* MemeTextModelService.swift */; };
+		E069D8A72ED5705C0090FBB1 /* MLXLLM in Frameworks */ = {isa = PBXBuildFile; productRef = E069D8A62ED5705C0090FBB1 /* MLXLLM */; };
+		E069D8A92ED5793E0090FBB1 /* MemeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D8A82ED579350090FBB1 /* MemeDetailView.swift */; };
+		E069D8AB2ED5F0630090FBB1 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D8AA2ED5F05E0090FBB1 /* ActivityView.swift */; };
+		E069D8B72ED617F90090FBB1 /* MemeRemixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D8B62ED617F10090FBB1 /* MemeRemixView.swift */; };
+		E069D8B92ED631AD0090FBB1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E069D8B82ED631A50090FBB1 /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		E069D8472ED4B66F0090FBB1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,14 +51,38 @@
 		E069D8372ED4B6690090FBB1 /* InstaMeme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaMeme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E069D8462ED4B66F0090FBB1 /* InstaMemeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaMemeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E069D8502ED4B66F0090FBB1 /* InstaMemeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaMemeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E069D87F2ED4E35B0090FBB1 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		E069D8802ED4E35B0090FBB1 /* InstaMemeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaMemeApp.swift; sourceTree = "<group>"; };
+		E069D8822ED4E35B0090FBB1 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		E069D8832ED4E35B0090FBB1 /* Meme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
+		E069D8852ED4E35B0090FBB1 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E069D8872ED4E35B0090FBB1 /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
+		E069D8882ED4E35B0090FBB1 /* MemeAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeAIService.swift; sourceTree = "<group>"; };
+		E069D88A2ED4E35B0090FBB1 /* MemeTextOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeTextOverlay.swift; sourceTree = "<group>"; };
+		E069D88C2ED4E35B0090FBB1 /* CameraMemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraMemeView.swift; sourceTree = "<group>"; };
+		E069D88D2ED4E35B0090FBB1 /* MemeEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeEditorView.swift; sourceTree = "<group>"; };
+		E069D88E2ED4E35B0090FBB1 /* MemeGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeGalleryView.swift; sourceTree = "<group>"; };
+		E069D88F2ED4E35B0090FBB1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E069D89D2ED51F7C0090FBB1 /* CameraCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCaptureView.swift; sourceTree = "<group>"; };
+		E069D8A42ED56D570090FBB1 /* MemeTextModelService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeTextModelService.swift; sourceTree = "<group>"; };
+		E069D8A82ED579350090FBB1 /* MemeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeDetailView.swift; sourceTree = "<group>"; };
+		E069D8AA2ED5F05E0090FBB1 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		E069D8B62ED617F10090FBB1 /* MemeRemixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeRemixView.swift; sourceTree = "<group>"; };
+		E069D8B82ED631A50090FBB1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		E069D8392ED4B6690090FBB1 /* InstaMeme */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = InstaMeme;
-			sourceTree = "<group>";
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E069D8B12ED5F9630090FBB1 /* Exceptions for "Extensions" folder in "InstaMeme" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"UIImage+Meme.swift",
+				"UIImage+Resize.swift",
+			);
+			target = E069D8362ED4B6690090FBB1 /* InstaMeme */;
 		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
 		E069D8492ED4B66F0090FBB1 /* InstaMemeTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = InstaMemeTests;
@@ -45,6 +93,14 @@
 			path = InstaMemeUITests;
 			sourceTree = "<group>";
 		};
+		E069D8AC2ED5F7150090FBB1 /* Extensions */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E069D8B12ED5F9630090FBB1 /* Exceptions for "Extensions" folder in "InstaMeme" target */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +108,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E069D8A72ED5705C0090FBB1 /* MLXLLM in Frameworks */,
+				E069D8A32ED537AF0090FBB1 /* MLXVLM in Frameworks */,
+				E069D8A12ED537AF0090FBB1 /* MLXLMCommon in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +134,13 @@
 		E069D82E2ED4B6690090FBB1 = {
 			isa = PBXGroup;
 			children = (
-				E069D8392ED4B6690090FBB1 /* InstaMeme */,
+				E069D8B82ED631A50090FBB1 /* README.md */,
+				E069D8AC2ED5F7150090FBB1 /* Extensions */,
+				E069D8812ED4E35B0090FBB1 /* App */,
+				E069D8842ED4E35B0090FBB1 /* Models */,
+				E069D8862ED4E35B0090FBB1 /* Resources */,
+				E069D8892ED4E35B0090FBB1 /* Services */,
+				E069D8902ED4E35B0090FBB1 /* Views */,
 				E069D8492ED4B66F0090FBB1 /* InstaMemeTests */,
 				E069D8532ED4B66F0090FBB1 /* InstaMemeUITests */,
 				E069D8382ED4B6690090FBB1 /* Products */,
@@ -90,6 +155,66 @@
 				E069D8502ED4B66F0090FBB1 /* InstaMemeUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E069D8812ED4E35B0090FBB1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E069D87F2ED4E35B0090FBB1 /* AppRouter.swift */,
+				E069D8802ED4E35B0090FBB1 /* InstaMemeApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E069D8842ED4E35B0090FBB1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E069D8822ED4E35B0090FBB1 /* AppSettings.swift */,
+				E069D8832ED4E35B0090FBB1 /* Meme.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E069D8862ED4E35B0090FBB1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E069D8852ED4E35B0090FBB1 /* .gitkeep */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E069D8892ED4E35B0090FBB1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E069D8A42ED56D570090FBB1 /* MemeTextModelService.swift */,
+				E069D8872ED4E35B0090FBB1 /* ImageStore.swift */,
+				E069D8882ED4E35B0090FBB1 /* MemeAIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E069D88B2ED4E35B0090FBB1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E069D89D2ED51F7C0090FBB1 /* CameraCaptureView.swift */,
+				E069D88A2ED4E35B0090FBB1 /* MemeTextOverlay.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E069D8902ED4E35B0090FBB1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E069D8B62ED617F10090FBB1 /* MemeRemixView.swift */,
+				E069D8AA2ED5F05E0090FBB1 /* ActivityView.swift */,
+				E069D8A82ED579350090FBB1 /* MemeDetailView.swift */,
+				E069D88B2ED4E35B0090FBB1 /* Components */,
+				E069D88C2ED4E35B0090FBB1 /* CameraMemeView.swift */,
+				E069D88D2ED4E35B0090FBB1 /* MemeEditorView.swift */,
+				E069D88E2ED4E35B0090FBB1 /* MemeGalleryView.swift */,
+				E069D88F2ED4E35B0090FBB1 /* SettingsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,11 +232,11 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				E069D8392ED4B6690090FBB1 /* InstaMeme */,
-			);
 			name = InstaMeme;
 			packageProductDependencies = (
+				E069D8A02ED537AF0090FBB1 /* MLXLMCommon */,
+				E069D8A22ED537AF0090FBB1 /* MLXVLM */,
+				E069D8A62ED5705C0090FBB1 /* MLXLLM */,
 			);
 			productName = InstaMeme;
 			productReference = E069D8372ED4B6690090FBB1 /* InstaMeme.app */;
@@ -132,6 +257,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				E069D8492ED4B66F0090FBB1 /* InstaMemeTests */,
+				E069D8AC2ED5F7150090FBB1 /* Extensions */,
 			);
 			name = InstaMemeTests;
 			packageProductDependencies = (
@@ -195,6 +321,9 @@
 			);
 			mainGroup = E069D82E2ED4B6690090FBB1;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E069D89F2ED537AF0090FBB1 /* XCRemoteSwiftPackageReference "mlx-swift-lm" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E069D8382ED4B6690090FBB1 /* Products */;
 			projectDirPath = "";
@@ -212,6 +341,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E069D89C2ED4E35B0090FBB1 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +349,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E069D8B92ED631AD0090FBB1 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +367,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E069D8912ED4E35B0090FBB1 /* Meme.swift in Sources */,
+				E069D8922ED4E35B0090FBB1 /* InstaMemeApp.swift in Sources */,
+				E069D8B72ED617F90090FBB1 /* MemeRemixView.swift in Sources */,
+				E069D8932ED4E35B0090FBB1 /* CameraMemeView.swift in Sources */,
+				E069D8942ED4E35B0090FBB1 /* SettingsView.swift in Sources */,
+				E069D8952ED4E35B0090FBB1 /* ImageStore.swift in Sources */,
+				E069D8962ED4E35B0090FBB1 /* AppRouter.swift in Sources */,
+				E069D89E2ED51F820090FBB1 /* CameraCaptureView.swift in Sources */,
+				E069D8972ED4E35B0090FBB1 /* MemeEditorView.swift in Sources */,
+				E069D8AB2ED5F0630090FBB1 /* ActivityView.swift in Sources */,
+				E069D8982ED4E35B0090FBB1 /* MemeTextOverlay.swift in Sources */,
+				E069D8992ED4E35B0090FBB1 /* MemeAIService.swift in Sources */,
+				E069D8A52ED56D600090FBB1 /* MemeTextModelService.swift in Sources */,
+				E069D89A2ED4E35B0090FBB1 /* AppSettings.swift in Sources */,
+				E069D89B2ED4E35B0090FBB1 /* MemeGalleryView.swift in Sources */,
+				E069D8A92ED5793E0090FBB1 /* MemeDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +547,8 @@
 				DEVELOPMENT_TEAM = NT5JU5RHR2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "InstaMeme uses the camera so you can capture photos and turn them into memes.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "InstaMeme needs access to your photo library to let you select images for memes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -432,6 +581,8 @@
 				DEVELOPMENT_TEAM = NT5JU5RHR2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "InstaMeme uses the camera so you can capture photos and turn them into memes.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "InstaMeme needs access to your photo library to let you select images for memes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -578,6 +729,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E069D89F2ED537AF0090FBB1 /* XCRemoteSwiftPackageReference "mlx-swift-lm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ml-explore/mlx-swift-lm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.29.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E069D8A02ED537AF0090FBB1 /* MLXLMCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E069D89F2ED537AF0090FBB1 /* XCRemoteSwiftPackageReference "mlx-swift-lm" */;
+			productName = MLXLMCommon;
+		};
+		E069D8A22ED537AF0090FBB1 /* MLXVLM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E069D89F2ED537AF0090FBB1 /* XCRemoteSwiftPackageReference "mlx-swift-lm" */;
+			productName = MLXVLM;
+		};
+		E069D8A62ED5705C0090FBB1 /* MLXLLM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E069D89F2ED537AF0090FBB1 /* XCRemoteSwiftPackageReference "mlx-swift-lm" */;
+			productName = MLXLLM;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E069D82F2ED4B6690090FBB1 /* Project object */;
 }
