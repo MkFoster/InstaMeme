@@ -74,15 +74,15 @@ InstaMeme showcases how the next wave of mobile apps can use **fast, private, lo
 
 ### Requirements
 
-- macOS Sonoma or later  
-- Xcode 15 or later  
+- macOS Tahoe or later  
+- Xcode 26 or later  
 - **Apple Silicon Mac**
 - iPhone running iOS 17+ (**required for live camera + on-device ML performance**)  
 
 ### 1️⃣ Clone the Repository
 
 ```sh
-git clone https://github.com/yourname/InstaMeme.git
+git clone https://github.com/MkFoster/InstaMeme
 cd InstaMeme
 ```
 
@@ -94,7 +94,6 @@ open InstaMeme.xcodeproj
 In Xcode:
 
 File → Add Packages…
-
 
 Add these URLs:
 
