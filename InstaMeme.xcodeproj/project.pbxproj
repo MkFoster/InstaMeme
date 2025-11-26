@@ -10,10 +10,7 @@
 		E069D8912ED4E35B0090FBB1 /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D8832ED4E35B0090FBB1 /* Meme.swift */; };
 		E069D8922ED4E35B0090FBB1 /* InstaMemeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D8802ED4E35B0090FBB1 /* InstaMemeApp.swift */; };
 		E069D8932ED4E35B0090FBB1 /* CameraMemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D88C2ED4E35B0090FBB1 /* CameraMemeView.swift */; };
-		E069D8942ED4E35B0090FBB1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D88F2ED4E35B0090FBB1 /* SettingsView.swift */; };
 		E069D8952ED4E35B0090FBB1 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D8872ED4E35B0090FBB1 /* ImageStore.swift */; };
-		E069D8962ED4E35B0090FBB1 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D87F2ED4E35B0090FBB1 /* AppRouter.swift */; };
-		E069D8972ED4E35B0090FBB1 /* MemeEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D88D2ED4E35B0090FBB1 /* MemeEditorView.swift */; };
 		E069D8982ED4E35B0090FBB1 /* MemeTextOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D88A2ED4E35B0090FBB1 /* MemeTextOverlay.swift */; };
 		E069D8992ED4E35B0090FBB1 /* MemeAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D8882ED4E35B0090FBB1 /* MemeAIService.swift */; };
 		E069D89A2ED4E35B0090FBB1 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D8822ED4E35B0090FBB1 /* AppSettings.swift */; };
@@ -28,6 +25,7 @@
 		E069D8AB2ED5F0630090FBB1 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D8AA2ED5F05E0090FBB1 /* ActivityView.swift */; };
 		E069D8B72ED617F90090FBB1 /* MemeRemixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D8B62ED617F10090FBB1 /* MemeRemixView.swift */; };
 		E069D8B92ED631AD0090FBB1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E069D8B82ED631A50090FBB1 /* README.md */; };
+		E069D8BB2ED66FD50090FBB1 /* MemePersonality.swift in Sources */ = {isa = PBXBuildFile; fileRef = E069D8BA2ED66FCC0090FBB1 /* MemePersonality.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +49,6 @@
 		E069D8372ED4B6690090FBB1 /* InstaMeme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaMeme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E069D8462ED4B66F0090FBB1 /* InstaMemeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaMemeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E069D8502ED4B66F0090FBB1 /* InstaMemeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaMemeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E069D87F2ED4E35B0090FBB1 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		E069D8802ED4E35B0090FBB1 /* InstaMemeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaMemeApp.swift; sourceTree = "<group>"; };
 		E069D8822ED4E35B0090FBB1 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		E069D8832ED4E35B0090FBB1 /* Meme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
@@ -60,15 +57,14 @@
 		E069D8882ED4E35B0090FBB1 /* MemeAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeAIService.swift; sourceTree = "<group>"; };
 		E069D88A2ED4E35B0090FBB1 /* MemeTextOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeTextOverlay.swift; sourceTree = "<group>"; };
 		E069D88C2ED4E35B0090FBB1 /* CameraMemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraMemeView.swift; sourceTree = "<group>"; };
-		E069D88D2ED4E35B0090FBB1 /* MemeEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeEditorView.swift; sourceTree = "<group>"; };
 		E069D88E2ED4E35B0090FBB1 /* MemeGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeGalleryView.swift; sourceTree = "<group>"; };
-		E069D88F2ED4E35B0090FBB1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		E069D89D2ED51F7C0090FBB1 /* CameraCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCaptureView.swift; sourceTree = "<group>"; };
 		E069D8A42ED56D570090FBB1 /* MemeTextModelService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeTextModelService.swift; sourceTree = "<group>"; };
 		E069D8A82ED579350090FBB1 /* MemeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeDetailView.swift; sourceTree = "<group>"; };
 		E069D8AA2ED5F05E0090FBB1 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		E069D8B62ED617F10090FBB1 /* MemeRemixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeRemixView.swift; sourceTree = "<group>"; };
 		E069D8B82ED631A50090FBB1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E069D8BA2ED66FCC0090FBB1 /* MemePersonality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemePersonality.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -160,7 +156,6 @@
 		E069D8812ED4E35B0090FBB1 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				E069D87F2ED4E35B0090FBB1 /* AppRouter.swift */,
 				E069D8802ED4E35B0090FBB1 /* InstaMemeApp.swift */,
 			);
 			path = App;
@@ -169,6 +164,7 @@
 		E069D8842ED4E35B0090FBB1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E069D8BA2ED66FCC0090FBB1 /* MemePersonality.swift */,
 				E069D8822ED4E35B0090FBB1 /* AppSettings.swift */,
 				E069D8832ED4E35B0090FBB1 /* Meme.swift */,
 			);
@@ -210,9 +206,7 @@
 				E069D8A82ED579350090FBB1 /* MemeDetailView.swift */,
 				E069D88B2ED4E35B0090FBB1 /* Components */,
 				E069D88C2ED4E35B0090FBB1 /* CameraMemeView.swift */,
-				E069D88D2ED4E35B0090FBB1 /* MemeEditorView.swift */,
 				E069D88E2ED4E35B0090FBB1 /* MemeGalleryView.swift */,
-				E069D88F2ED4E35B0090FBB1 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -371,11 +365,9 @@
 				E069D8922ED4E35B0090FBB1 /* InstaMemeApp.swift in Sources */,
 				E069D8B72ED617F90090FBB1 /* MemeRemixView.swift in Sources */,
 				E069D8932ED4E35B0090FBB1 /* CameraMemeView.swift in Sources */,
-				E069D8942ED4E35B0090FBB1 /* SettingsView.swift in Sources */,
+				E069D8BB2ED66FD50090FBB1 /* MemePersonality.swift in Sources */,
 				E069D8952ED4E35B0090FBB1 /* ImageStore.swift in Sources */,
-				E069D8962ED4E35B0090FBB1 /* AppRouter.swift in Sources */,
 				E069D89E2ED51F820090FBB1 /* CameraCaptureView.swift in Sources */,
-				E069D8972ED4E35B0090FBB1 /* MemeEditorView.swift in Sources */,
 				E069D8AB2ED5F0630090FBB1 /* ActivityView.swift in Sources */,
 				E069D8982ED4E35B0090FBB1 /* MemeTextOverlay.swift in Sources */,
 				E069D8992ED4E35B0090FBB1 /* MemeAIService.swift in Sources */,

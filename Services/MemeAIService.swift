@@ -26,7 +26,7 @@ final class MemeAIService {
     /// 1. Uses Vision to classify the image (top labels).
     /// 2. Asks MemeTextModelService (Llama) to turn labels into captions.
     /// 3. If the LLM fails, falls back to returning the labels themselves.
-    func suggestCaptions(for image: UIImage) async throws -> [String] {
+    func suggestCaptions(for image: UIImage, personality: MemePersonality) async throws -> [String] {
         guard let cgImage = image.cgImage else {
             throw AIServiceError.invalidImage
         }
@@ -35,6 +35,10 @@ final class MemeAIService {
         let labels: [String]
         do {
             labels = try await classifyTopLabels(from: cgImage)
+
+            // 🔍 Debug logging
+            print("🔎 Vision labels:", labels.joined(separator: ", "))
+            
         } catch {
             print("Vision classification failed: \(error)")
             // If Vision fails, just give a generic suggestion.
@@ -42,19 +46,24 @@ final class MemeAIService {
         }
 
         if labels.isEmpty {
+            print("⚠️ No labels detected.")
             return ["(Couldn't recognize anything; add your own caption!)"]
         }
 
         // 2. Ask the text model to turn labels into meme captions.
         do {
-            let captions = try await MemeTextModelService.shared.generateCaptions(forLabels: labels)
+            let captions = try await MemeTextModelService.shared.generateCaptions(
+                forLabels: labels,
+                personality: personality
+            )
             return captions
         } catch {
             // 3. Fallback: LLM not available or failed → just use labels.
-            print("Text model failed, falling back to labels: \(error)")
+            print("🤖 Text model failed — using labels instead. Error:", error)
             return labels
         }
     }
+
 
     // MARK: - Vision helpers
 

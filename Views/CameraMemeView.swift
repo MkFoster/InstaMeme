@@ -20,6 +20,8 @@ struct CameraMemeView: View {
     @State private var isSuggesting = false
     @State private var captionSuggestions: [String] = []
     @State private var aiErrorMessage: String?
+    
+    @State private var selectedPersonality: MemePersonality = .relatable
 
     var body: some View {
         NavigationStack {
@@ -117,6 +119,38 @@ struct CameraMemeView: View {
                         .foregroundStyle(.orange)
                         .padding(.horizontal)
                 }
+                
+                // Personality picker
+                VStack(alignment: .leading, spacing: 8) {
+                    Text("Personality")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack(spacing: 8) {
+                            ForEach(MemePersonality.allCases) { personality in
+                                Button {
+                                    selectedPersonality = personality
+                                } label: {
+                                    Text(personality.displayName)
+                                        .font(.caption)
+                                        .padding(.horizontal, 10)
+                                        .padding(.vertical, 6)
+                                        .background(
+                                            selectedPersonality == personality
+                                            ? Color.blue.opacity(0.9)
+                                            : Color.gray.opacity(0.15)
+                                        )
+                                        .foregroundColor(
+                                            selectedPersonality == personality ? .white : .primary
+                                        )
+                                        .clipShape(Capsule())
+                                }
+                            }
+                        }
+                    }
+                }
+                .padding(.horizontal)
 
                 // AI caption suggestions
                 if !captionSuggestions.isEmpty {
@@ -194,6 +228,7 @@ struct CameraMemeView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     Button("Cancel") {
+                        resetForm()
                         dismiss()
                     }
                 }
@@ -203,6 +238,10 @@ struct CameraMemeView: View {
                     await loadSelectedImage(from: newItem)
                 }
             }
+        }
+        .onAppear {
+            // Every time the sheet is presented, start fresh
+            resetForm()
         }
         .sheet(isPresented: $isShowingCamera) {
             CameraCaptureView(image: $selectedImage)
@@ -271,7 +310,10 @@ struct CameraMemeView: View {
         aiErrorMessage = nil
 
         do {
-            let captions = try await MemeAIService.shared.suggestCaptions(for: image)
+            let captions = try await MemeAIService.shared.suggestCaptions(
+                for: image,
+                personality: selectedPersonality
+            )
             captionSuggestions = captions
         } catch let error as AIServiceError {
             switch error {
@@ -284,6 +326,23 @@ struct CameraMemeView: View {
         }
 
         isSuggesting = false
+    }
+    
+    private func resetForm() {
+        selectedItem = nil
+        selectedImage = nil
+
+        topText = ""
+        bottomText = ""
+
+        isSaving = false
+        errorMessage = nil
+
+        isShowingCamera = false
+
+        isSuggesting = false
+        captionSuggestions = []
+        aiErrorMessage = nil
     }
 
 }

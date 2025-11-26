@@ -18,6 +18,8 @@ struct MemeRemixView: View {
     @State private var isSuggesting = false
     @State private var captionSuggestions: [String] = []
     @State private var aiErrorMessage: String?
+    
+    @State private var selectedPersonality: MemePersonality = .relatable
 
     init(baseImage: UIImage, originalMeme: Meme, onSave: @escaping (Meme) -> Void) {
         self.baseImage = baseImage
@@ -62,6 +64,38 @@ struct MemeRemixView: View {
 
                     TextField("Bottom text", text: $bottomText)
                         .textFieldStyle(.roundedBorder)
+                }
+                .padding(.horizontal)
+                
+                // Personality picker
+                VStack(alignment: .leading, spacing: 8) {
+                    Text("Personality")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack(spacing: 8) {
+                            ForEach(MemePersonality.allCases) { personality in
+                                Button {
+                                    selectedPersonality = personality
+                                } label: {
+                                    Text(personality.displayName)
+                                        .font(.caption)
+                                        .padding(.horizontal, 10)
+                                        .padding(.vertical, 6)
+                                        .background(
+                                            selectedPersonality == personality
+                                            ? Color.blue.opacity(0.9)
+                                            : Color.gray.opacity(0.15)
+                                        )
+                                        .foregroundColor(
+                                            selectedPersonality == personality ? .white : .primary
+                                        )
+                                        .clipShape(Capsule())
+                                }
+                            }
+                        }
+                    }
                 }
                 .padding(.horizontal)
 
@@ -149,7 +183,10 @@ struct MemeRemixView: View {
         aiErrorMessage = nil
 
         do {
-            let captions = try await MemeAIService.shared.suggestCaptions(for: baseImage)
+            let captions = try await MemeAIService.shared.suggestCaptions(
+                for: baseImage,
+                personality: selectedPersonality
+            )
             captionSuggestions = captions
         } catch let error as AIServiceError {
             switch error {

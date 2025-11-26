@@ -71,9 +71,10 @@ final class MemeTextModelService {
         #endif
     }
 
-
     /// Generate 2–3 meme-style captions given a set of labels from Vision.
-    func generateCaptions(forLabels labels: [String]) async throws -> [String] {
+    /// Now supports personality modes to guide the style of the captions.
+    func generateCaptions(forLabels labels: [String],
+                          personality: MemePersonality) async throws -> [String] {
         #if !(canImport(MLX) && canImport(MLXLLM) && canImport(MLXLMCommon))
         throw MemeTextModelError.mlxPackagesMissing
         #else
@@ -84,6 +85,9 @@ final class MemeTextModelService {
 
         let prompt = """
         You are a meme caption generator.
+
+        Style guidance:
+        \(personality.stylePrompt)
 
         Objects or concepts detected in the image:
         \(labelText)
@@ -142,7 +146,6 @@ final class MemeTextModelService {
         #endif
     }
 
-    
     // MARK: - Parsing helpers
 
     /// Parse "1) foo\n2) bar\n3) baz" into ["foo", "bar", "baz"].
